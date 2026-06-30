@@ -1,3 +1,10 @@
+@media screen and (max-width:800px){
+    .outer-container{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
 *{ font-family: "Roboto", Arial, sans-serif; }
 
 body{
