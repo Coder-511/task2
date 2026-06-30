@@ -23,51 +23,61 @@
         <div class="form-container">
             <form method="post" onsubmit="return register()" class="auth-form">
                 <div class="userid-input">
-                    <label>USER ID * </label><input class="input-field" type="text" placeholder="ex. 12345" name="userid" id="userid" required>
+                    <label>USER ID <span class="required">*</span> </label>
+                    <input class="input-field" type="text" placeholder="ex. 12345" name="userid" id="userid" required>
                 </div>
 
                 <div class="password-input">
-                    <label>PASSWORD * </label><input class="input-field" type="password" placeholder="*******" name="password" id="password" required>
+                    <label>PASSWORD <span class="required">*</span> </label>
+                    <input class="input-field" type="password" placeholder="*******" name="password" id="password" required>
                 </div>
 
                 <div class="name-input">
-                    <label>NAME * </label><input class="input-field" type="text" placeholder="ex. Ahmad" name="name" id="name" required>
+                    <label>NAME <span class="required">*</span> </label>
+                    <input class="input-field" type="text" placeholder="ex. Ahmad" name="name" id="name" required>
                 </div>
 
                 <div class="address-input">
-                    <label>ADDRESS (OPTIONAL) </label><input class="input-field" type="text" placeholder="ex. Amman st. 1234" name="address" id="address">
+                    <label>ADDRESS <span class="optional">(OPTIONAL)</span> </label>
+                    <input class="input-field" type="text" placeholder="ex. Amman st. 1234" name="address" id="address">
                 </div>
 
                 <div class="country-input">
-                    <label>COUNTRY * </label><select id="country" class="country-list" required>
-                                                 <option value="" hidden>(Please select a country)</option>
-                                                 <option value="jordan">Jordan</option>
-                                                 <option value="qatar">Qatar</option>
-                                                 <option value="oman">Oman</option>
-                                                 <option value="saudiaarabia">Saudia Arabia</option>
-                                             </select>
+                    <label>COUNTRY <span class="required">*</span> </label>
+                    <select id="country" class="country-list" required>
+                        <option value="" hidden>(Please select a country)</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="qatar">Qatar</option>
+                        <option value="oman">Oman</option>
+                        <option value="saudiaarabia">Saudia Arabia</option>
+                    </select>
                 </div>
 
                 <div class="zipcode-input">
-                    <label>ZIP CODE * </label><input class="input-field" type="text" placeholder="ex. 1234" name="zipcode" id="zipcode" required>
+                    <label>ZIP CODE <span class="required">*</span> </label>
+                    <input class="input-field" type="text" placeholder="ex. 1234" name="zipcode" id="zipcode" required>
                 </div>
 
                 <div class="email-input">
-                    <label>EMAIL * </label><input class="input-field" type="email" placeholder="example@sprintive.com" name="email" id="email" required>
+                    <label>EMAIL <span class="required">*</span> </label>
+                    <input class="input-field" type="email" placeholder="example@sprintive.com" name="email" id="email" required>
                 </div>
 
                 <div class="gender-input">
-                    <label>GENDER * </label><input type="radio" id ="male" value="male" name="gender"><span>Male</span>
-                                            <input type="radio" id="female" value="female" name="gender"><span>Female</span>
+                    <label>GENDER <span class="required">*</span> </label>
+                    <input type="radio" id ="male" value="male" name="gender"><span>Male</span>
+                    <input type="radio" id="female" value="female" name="gender"><span>Female</span>
                 </div>
 
                 <div class="language-input">
-                    <label>LANGUAGE * </label><input type="checkbox" id="emglish" name="language" value="english"><span>English</span>
-                                              <input type="checkbox" id="nonenglish" name="language" value="nonenglish"><span>Non English</span>
+                    <label>LANGUAGE <span class="required">*</span> </label>
+                    <input type="checkbox" id="emglish" name="language" value="english"><span>English</span>
+                    <input type="checkbox" id="nonenglish" name="language" value="nonenglish"><span>Non English</span>
                 </div>
 
                 <div class="about-input">
-                    <label>About (OPTIONAL) </label><textarea class="about-textarea" name="about" id="about"></textarea>
+                    <label>About <span class="optional">(OPTIONAL)</span> </label>
+                    <textarea class="about-textarea" name="about" id="about"></textarea>
                 </div>
 
                 <div class="bottom-btns">
