@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body>
+
+    <div class="outer-container">
+        <div class="left-text-container">
+            <div class="upper-text">
+                <h1>Sign Up</h1>
+                <p class="leftside-paragraph">Sign up with your simple details. It will be cross checked by the adminstration</p>
+            </div>
+
+            <div class="lower-text">
+                <h1>SIgn In</h1>
+                <p class="leftside-paragraph">Sign in with your username and password</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form method="post" onsubmit="return login()" class="auth-form">
+                <div class="email-input">
+                    <label>EMAIL </label><input class="input-field" type="email" placeholder="example@sprintive.com" id="email" name="email" required>
+                </div>
+
+                <div class="password-input">
+                    <label>PASSWORD </label><input class="input-field" type="password" placeholder="************" id="password" name="password" required>
+                </div>
+
+                <div class="bottom-btns">
+                    <div>
+                        <input class="submit-button" type="submit" value="Sign in">
+                    </div>
+
+                    <div class="text-between-buttons">
+                        <span>or</span>
+                    </div>
+
+                    <div class="otherform-button">
+                        <a href="register.html">Sign Up</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

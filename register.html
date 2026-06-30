@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <div class="outer-container">
+        <div class="left-text-container">
+            <div class="upper-text">
+                <h1>Sign Up</h1>
+                <p class="leftside-paragraph">Sign up with your simple details. It will be cross checked by the adminstration</p>
+            </div>
+
+            <div class="lower-text">
+                <h1>SIgn In</h1>
+                <p class="leftside-paragraph">Sign in with your username and password</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form method="post" onsubmit="return register()" class="auth-form">
+                <div class="userid-input">
+                    <label>USER ID * </label><input class="input-field" type="text" placeholder="ex. 12345" name="userid" id="userid" required>
+                </div>
+
+                <div class="password-input">
+                    <label>PASSWORD * </label><input class="input-field" type="password" placeholder="*******" name="password" id="password" required>
+                </div>
+
+                <div class="name-input">
+                    <label>NAME * </label><input class="input-field" type="text" placeholder="ex. Ahmad" name="name" id="name" required>
+                </div>
+
+                <div class="address-input">
+                    <label>ADDRESS (OPTIONAL) </label><input class="input-field" type="text" placeholder="ex. Amman st. 1234" name="address" id="address">
+                </div>
+
+                <div class="country-input">
+                    <label>COUNTRY * </label><select id="country" class="country-list" required>
+                                <option value="" hidden>(Please select a country)</option>
+                                <option value="jordan">Jordan</option>
+                                <option value="qatar">Qatar</option>
+                                <option value="oman">Oman</option>
+                                <option value="saudiaarabia">Saudia Arabia</option>
+                             </select>
+                </div>
+
+                <div class="zipcode-input">
+                    <label>ZIP CODE * </label><input class="input-field" type="text" placeholder="ex. 1234" name="zipcode" id="zipcode" required>
+                </div>
+
+                <div class="email-input">
+                    <label>EMAIL * </label><input class="input-field" type="email" placeholder="example@sprintive.com" name="email" id="email" required>
+                </div>
+
+                <div class="gender-input">
+                    <label>GENDER * </label><input type="radio" id ="male" value="male" name="gender"><span>Male</span>
+                            <input type="radio" id="female" value="female" name="gender"><span>Female</span>
+                </div>
+
+                <div class="language-input">
+                    <label>LANGUAGE * </label><input type="checkbox" id="emglish" name="language" value="english"><span>English</span>
+                              <input type="checkbox" id="nonenglish" name="language" value="nonenglish"><span>Non English</span>
+                </div>
+
+                <div class="about-input">
+                    <label>About (OPTIONAL) </label><textarea class="about-textarea" name="about" id="about"></textarea>
+                </div>
+
+                <div class="bottom-btns">
+                    <div>
+                        <input class="submit-button" type="submit" value="Sign up">
+                    </div>
+
+                    <div class="text-between-buttons">
+                        <span>or</span>
+                    </div>
+
+                    <div class="otherform-button">
+                        <a href="login.html">Sign In</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
